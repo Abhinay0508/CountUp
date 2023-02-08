@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <nav class={`navbar bg-body-primary navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="/countup-high-resolution-logo-color-on-transparent-background.svg" alt='' width="70" height="42ß" class="d-inline-block align-text-middle"/>
+      <img src="/countuplogo.png" alt='' width="70" height="42" class="d-inline-block align-text-middle"/>
       <b>{props.title}</b>
     </a>
 
