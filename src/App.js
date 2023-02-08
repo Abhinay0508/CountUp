@@ -44,7 +44,7 @@ function App() {
   return (
     <>
     {/* <Router> */}
-<Navbar title ="TextUtils" aboutText ="About Us" mode={mode} toggleMode={toggleMode} />
+<Navbar title =  {<b>CountUp</b>} aboutText ="About Us" mode={mode} toggleMode={toggleMode} />
 <Alert alert ={alert}/>
 <div className="container my-5 mx-6"> 
 {/* <Switch> */}
@@ -52,7 +52,7 @@ function App() {
             {/* <About/> */}
           {/* </Route> */}
           {/* <Route exact path="/"> */}
-            <TextForm showAlert ={showAlert} heading="Try TextUtils - Word Counter | Character Counter" mode={mode}/>
+            <TextForm showAlert ={showAlert} heading="Try CountUp - Word Counter | Character Counter | Cases Converter :" mode={mode}/>
           {/* </Route> */}
         {/* </Switch> */}
 </div>

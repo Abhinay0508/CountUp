@@ -3,14 +3,12 @@ import React, {useState} from 'react'
 
 export default function TextForm(props) {
   const handleUpClick = () =>{
-    console.log("Uppercase was clicked" + text);
     let newText = text.toUpperCase();
     setText(newText)
     props.showAlert("Converted to uppercase!", "success");
   }
   
   const handleLoClick = () =>{
-    console.log("Lowercase was clicked" + text);
     let newText = text.toLowerCase();
     setText(newText)
     props.showAlert("Converted to lowercase!", "success");
@@ -24,21 +22,19 @@ export default function TextForm(props) {
   }
 
   const handleClearClick = () =>{
-    console.log("Cleared" + text);
     let newText = ''
     setText(newText)
     props.showAlert("Text Cleared!", "success");
   }
 
   const handleOnChange = (event) =>{ 
-    console.log('OnChange');
     setText(event.target.value);
   }
     const [text, setText] = useState('');
   return (
     <>
     <div className="container" style={{color: props.mode === 'dark'?'white':'#042743'}}>
-        <h1 className='mb-2'>{props.heading}</h1>
+        <h1 className='mb-3'>{props.heading}</h1>
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark'?'#13466e':'white', color:props.mode === 'dark'?'white':'#042743'}} id="Mybox" rows="8"></textarea>
         </div>
@@ -49,7 +45,7 @@ export default function TextForm(props) {
     </div> 
     <div className="container my-4" style={{color: props.mode === 'dark'?'white':'#042743'}}>
       <h2><b>Your Text Summary :-</b></h2>
-      <p> There are <u>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words</u> & <u>{text.length} Characters</u></p>
+      <p> There are <u>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words</u> & <u>{text.length} Characters</u></p>
     </div>
     </>
   )
