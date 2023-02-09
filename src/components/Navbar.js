@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'
 export default function Navbar(props) {
   return (
 
-    <nav class={`navbar bg-body-primary navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-    <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/Images/countup-logo.png"  width="70" height="42" class="d-inline-block align-text-middle"/>
+    <nav className={`navbar bg-body-primary navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+    <div className="container-fluid">
+    <a className="navbar-brand" href="/">
+      <img src="Images/countup-logo.png" alt='' width="63" height="40" className="mx-2 d-inline-block align-text-middle"/>
       <b>{props.title}</b>
     </a>
 
