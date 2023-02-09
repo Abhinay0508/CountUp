@@ -7,7 +7,7 @@ export default function Navbar(props) {
 
     <nav className={`navbar bg-body-primary navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div className="container-fluid">
-    <a className="navbar-brand" href="/">
+    <a className="navbar-brand" href="#">
       <img src="Images/countup-logo.png" alt='' width="63" height="40" className="mx-2 d-inline-block align-text-middle"/>
       <b>{props.title}</b>
     </a>
@@ -22,7 +22,7 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active mb-1" aria-current="page" href="/">Home </a>
+            {/* <a className="nav-link active mb-1" aria-current="page" href="/">Home </a> */}
             {/* <Link className="nav-link active mx-3" aria-current="page" to="/">Home </Link> */}
           </li>
           {/* <li className="nav-item">

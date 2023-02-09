@@ -31,20 +31,20 @@ function App() {
     if(mode === 'light'){
     setMode ('dark');
     document.body.style.backgroundColor = '#042743';
-    showAlert("Dark Mode has been enabled","success");
+    showAlert("Dark Mode has been enabled!","success");
     // document.title = 'TextUtils-Dark Mode';
   }
     else{
     setMode ('light');
     document.body.style.backgroundColor = 'white';
-    showAlert("Light Mode has been enabled","success");
+    showAlert("Light Mode has been enabled!","success");
     // document.title = 'TextUtils-Light Mode';
   }
 }
   return (
     <>
     {/* <Router> */}
-<Navbar title =  {<b>CountUp</b>} aboutText ="About Us" mode={mode} toggleMode={toggleMode} />
+<Navbar title =  {<b> Let's Count it!</b>} aboutText ="About Us" mode={mode} toggleMode={toggleMode} />
 <Alert alert ={alert}/>
 <div className="container my-5 mx-6"> 
 {/* <Switch> */}
